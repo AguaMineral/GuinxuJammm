@@ -292,6 +292,12 @@
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
       <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
+    <Reference Include="TextMeshPro-2017.3-Editor">
+      <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="TextMeshPro-2017.3-Runtime">
+      <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -309,12 +315,6 @@
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
       <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Library/PackageCache/com.unity.render-pipelines.core@7.1.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
-    </Reference>
-    <Reference Include="TextMeshPro-2017.3-Runtime">
-      <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="TextMeshPro-2017.3-Editor">
-      <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
