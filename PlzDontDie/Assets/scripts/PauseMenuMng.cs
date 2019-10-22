@@ -44,6 +44,7 @@ public class PauseMenuMng : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
+  
     public void QuitGame()
     {
         Debug.Log("QUIT");

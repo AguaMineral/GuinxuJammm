@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2108383055686972484}
   m_Layer: 0
   m_Name: bullet2
-  m_TagString: playerBullet
+  m_TagString: enemBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,11 +146,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6497260892673634704}
     m_Modifications:
-    - target: {fileID: 2070301872253670823, guid: feaa452783e6395429527a85e1e67ac0,
-        type: 3}
-      propertyPath: m_Name
-      value: PointLighBullet
-      objectReference: {fileID: 0}
     - target: {fileID: 915421544473283324, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -205,6 +200,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070301872253670823, guid: feaa452783e6395429527a85e1e67ac0,
+        type: 3}
+      propertyPath: m_Name
+      value: PointLighBullet
       objectReference: {fileID: 0}
     - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}

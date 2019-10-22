@@ -13,6 +13,8 @@ public class playerMovement : MonoBehaviour
 
     public Camera cam;
 
+    
+
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
