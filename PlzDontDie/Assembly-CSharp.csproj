@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\BackgroundLoop.cs" />
     <Compile Include="Assets\scripts\bulletController.cs" />
     <Compile Include="Assets\scripts\CameraController.cs" />
     <Compile Include="Assets\scripts\enemyController.cs" />

@@ -45,7 +45,7 @@ public class EnemyRangedController : MonoBehaviour
         //Enemy shots
         if(timeBtwShots <= 0)
         {
-            Vector3 posicion = new Vector3(transform.position.x + 0.5f, transform.position.y - 0.5f, transform.position.z);
+            Vector3 posicion = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             GameObject bullet = Instantiate(bulletPrefab, posicion, Quaternion.identity);
             Rigidbody2D rbBullet = bullet.GetComponent<Rigidbody2D>();
             rbBullet.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);

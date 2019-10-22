@@ -25,4 +25,14 @@ public class bulletController : MonoBehaviour
         camShake.Shake(camShakeAmt, 0.2f);
         
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "player")
+        {
+            GameObject firework = Instantiate(particles, transform.position, Quaternion.identity);
+            firework.GetComponent<ParticleSystem>().Play();
+            Destroy(gameObject);
+            camShake.Shake(camShakeAmt, 0.2f);
+        }
+    }
 }
