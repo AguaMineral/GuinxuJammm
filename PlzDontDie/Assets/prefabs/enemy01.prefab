@@ -157,3 +157,5 @@ MonoBehaviour:
   life: 4
   bulletCont: {fileID: 2956458513606301303, guid: 1a15c2af34079264fb816bc3d11c3484,
     type: 3}
+  speed: 2.5
+  minDistance: 0.4

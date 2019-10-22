@@ -131,9 +131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e01d2afbb56cb64d8cf26598544a911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camShakeAmt: 0.05
+  camShakeAmt: 0.028
   particles: {fileID: 1790709366843131628, guid: ae3a8c939a5bf724a989f2c936b0801e,
     type: 3}
   duration: 1
-  hiteffect: {fileID: 0}
   bulletDamage: 2

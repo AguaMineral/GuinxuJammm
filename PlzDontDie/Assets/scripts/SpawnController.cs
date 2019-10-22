@@ -18,14 +18,14 @@ public class SpawnController : MonoBehaviour
 
     private void Update()
     {
-        CheckMaxEnemies();
+        //CheckMaxEnemies();
     }
 
     void CheckMaxEnemies()
     {
-        enemiesInRoom = GameObject.FindGameObjectsWithTag("enem01").Length;
+       /* enemiesInRoom = GameObject.FindGameObjectsWithTag("enem01").Length;
         if (enemiesInRoom >= maxNumOfEnemies - 1)
-            StopSpawning = true;
+            StopSpawning = true;*/
     }
     public void SpawnEnemy()
     {
