@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 751430060596928175}
   - component: {fileID: 770269129870468562}
   - component: {fileID: 3280504868162652594}
+  - component: {fileID: -5773895334323272383}
   m_Layer: 0
   m_Name: enemy01
   m_TagString: enem01
@@ -157,11 +158,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554be0b6104e1fc46a15d835f6348e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 4
+  life: 19.738228
   bulletCont: {fileID: 6483410532391121434, guid: 44d40ca6d76dd02449a8ba2dc0a7686f,
     type: 3}
   speed: 2.5
   minDistance: 0.4
+--- !u!114 &-5773895334323272383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5082919028850961212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb766f03e5af0bf4d8d45f29bcb6153f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velPWUP: {fileID: 2505675080257678148, guid: 4e7ee691f2775f241bf45ffbd421bdf8, type: 3}
+  shotPWUP: {fileID: 6313748715812241786, guid: 69def38eee82e334796c9dce6cdab77a,
+    type: 3}
+  dmgPWUP: {fileID: 3326406649938886475, guid: da8412e6cfc387d47a9e80e9f20bfc60, type: 3}
 --- !u!1001 &468035704386129765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -169,11 +186,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 954605339643310186}
     m_Modifications:
-    - target: {fileID: 2070301872253670823, guid: feaa452783e6395429527a85e1e67ac0,
-        type: 3}
-      propertyPath: m_Name
-      value: PointLighBullet
-      objectReference: {fileID: 0}
     - target: {fileID: 915421544473283324, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -228,6 +240,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070301872253670823, guid: feaa452783e6395429527a85e1e67ac0,
+        type: 3}
+      propertyPath: m_Name
+      value: PointLighBullet
       objectReference: {fileID: 0}
     - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}

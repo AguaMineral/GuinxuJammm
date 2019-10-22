@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class enemyController : MonoBehaviour
 {
     
-    public int life = 10;
+    public float life;
     public bulletController bulletCont;
     
 

@@ -8,7 +8,7 @@ public class bulletController : MonoBehaviour
     Shaker camShake;
     public GameObject particles;
     public float duration = 1f;
-    public int bulletDamage = 2;
+    public float bulletDamage = 2f;
 
     void Start()
     {  

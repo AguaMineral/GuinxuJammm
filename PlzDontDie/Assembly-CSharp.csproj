@@ -99,8 +99,12 @@
     <Compile Include="Assets\scripts\EnemyRangedController.cs" />
     <Compile Include="Assets\scripts\GameManager.cs" />
     <Compile Include="Assets\scripts\MainMenuMng.cs" />
+    <Compile Include="Assets\scripts\PWUPatckSpeed.cs" />
+    <Compile Include="Assets\scripts\PWUVelMov.cs" />
+    <Compile Include="Assets\scripts\PWUdamage.cs" />
     <Compile Include="Assets\scripts\PauseMenuMng.cs" />
     <Compile Include="Assets\scripts\PlayerManager.cs" />
+    <Compile Include="Assets\scripts\PowerUpDrop.cs" />
     <Compile Include="Assets\scripts\Shaker.cs" />
     <Compile Include="Assets\scripts\SpawnController.cs" />
     <Compile Include="Assets\scripts\bulletController.cs" />
