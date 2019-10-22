@@ -401,6 +401,12 @@
     <Reference Include="ICSharpCode.NRefactory">
       <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Library/PackageCache/com.unity.render-pipelines.core@7.1.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
+    <Reference Include="TextMeshPro-2017.3-Runtime">
+      <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="TextMeshPro-2017.3-Editor">
+      <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
+    </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/Programas/2019.3.0b7/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
     </Reference>
