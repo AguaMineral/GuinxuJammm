@@ -291,7 +291,7 @@
       <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Library/PackageCache/com.unity.render-pipelines.core@7.1.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+      <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Library/PackageCache/com.unity.render-pipelines.core@7.1.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/Dev/unity/GuinxuJam/PlzDontDie/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>

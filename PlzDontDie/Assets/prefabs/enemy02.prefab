@@ -39,13 +39,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  bulletCont: {fileID: 8814843199718709646, guid: 2d1569edd1533514b9efb8b0f1c92157,
+  bulletCont: {fileID: 6483410532391121434, guid: 44d40ca6d76dd02449a8ba2dc0a7686f,
     type: 3}
   speed: 1.6
   stoppingDistance: 3
   nearDistance: 2
   startTimeBtwShots: 2
-  bulletPrefab: {fileID: 8631845252391434452, guid: 2d1569edd1533514b9efb8b0f1c92157,
+  bulletPrefab: {fileID: 1215021500474725662, guid: c74270e349530384d9b89b109ddcf55e,
     type: 3}
   firePoint: {fileID: 4618634223325105764}
   rb: {fileID: 6545340851979728430}
@@ -217,6 +217,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Constraints
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 777698821339825561, guid: 3c5e4d73e05ca5c419582207154014c8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 777698821339825561, guid: 3c5e4d73e05ca5c419582207154014c8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.004158413
+      objectReference: {fileID: 0}
+    - target: {fileID: 777698821339825561, guid: 3c5e4d73e05ca5c419582207154014c8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99999136
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960460677603420977, guid: 3c5e4d73e05ca5c419582207154014c8,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960460677603420977, guid: 3c5e4d73e05ca5c419582207154014c8,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960460677603420977, guid: 3c5e4d73e05ca5c419582207154014c8,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.01149416
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960460677603420977, guid: 3c5e4d73e05ca5c419582207154014c8,
+        type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 0.6109243
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960460677603420977, guid: 3c5e4d73e05ca5c419582207154014c8,
+        type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0.48773903
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 770269129870468562, guid: 3c5e4d73e05ca5c419582207154014c8, type: 3}

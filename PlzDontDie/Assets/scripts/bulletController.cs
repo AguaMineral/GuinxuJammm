@@ -32,7 +32,7 @@ public class bulletController : MonoBehaviour
             GameObject firework = Instantiate(particles, transform.position, Quaternion.identity);
             firework.GetComponent<ParticleSystem>().Play();
             Destroy(gameObject);
-            camShake.Shake(camShakeAmt, 0.2f);
+            camShake.Shake(0.18f, 0.2f);
         }
     }
 }
