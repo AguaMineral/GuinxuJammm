@@ -71,10 +71,11 @@ public class EnemyRangedController : MonoBehaviour
             life -= bulletController.bulletDamage;
             //print(life);
            // print("Enemy: hit!");
-            if (CheckIsDeath()) { 
+            if (CheckIsDeath()) {
+                GetComponent<PowerUpDrop>().dropPowerUp(transform.position);
                 Destroy(gameObject);
-                GetComponent<PowerUpDrop>().dropPowerUp();
                 FindObjectOfType<GameManager>().UpdateScore();
+                FindObjectOfType<GameManager>().enemyCount++;
             }
         }
     }

@@ -33,9 +33,10 @@ public class enemyController : MonoBehaviour
             //print("Enemy: hit!");
             if (CheckIsDeath())
             {
+                GetComponent<PowerUpDrop>().dropPowerUp(transform.position);
                 Destroy(gameObject);
-                GetComponent<PowerUpDrop>().dropPowerUp();
                 FindObjectOfType<GameManager>().UpdateScore();
+                FindObjectOfType<GameManager>().enemyCount++;
             }
         }
     }

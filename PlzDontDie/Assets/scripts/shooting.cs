@@ -36,7 +36,7 @@ public class shooting : MonoBehaviour
     {
         fireRate = FindObjectOfType<GameManager>().fireRate;
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        print ("Daño: "+bulletController.bulletDamage);
+        //print ("Daño: "+bulletController.bulletDamage);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     }

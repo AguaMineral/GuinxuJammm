@@ -21,16 +21,27 @@ public class bulletController : MonoBehaviour
     private void Update()
     {
         bulletDamage = FindObjectOfType<GameManager>().bulletDamage;
-        print(bulletDamage);
+       // print(bulletDamage);
     }
     void OnCollisionEnter2D(Collision2D collision)
-    {;
-        GameObject firework = Instantiate(particles, transform.position, Quaternion.identity);
-        firework.GetComponent<ParticleSystem>().Play();
-        Destroy(firework, 1f);
-        Destroy(gameObject);
-        //Shake camera
-        camShake.Shake(camShakeAmt, 0.2f);
+    {
+        if ( collision.gameObject.tag == "enem01" || collision.gameObject.tag == "enem02")
+        {
+            GameObject firework = Instantiate(particles, transform.position, Quaternion.identity);
+            firework.GetComponent<ParticleSystem>().Play();
+            Destroy(firework, 1f);
+            Destroy(gameObject);
+            //Shake camera
+            camShake.Shake(camShakeAmt, 0.2f);
+        }
+        else
+        {
+            GameObject firework = Instantiate(particles, transform.position, Quaternion.identity);
+            firework.GetComponent<ParticleSystem>().Play();
+            Destroy(firework, 1f);
+            Destroy(gameObject);
+        }
+        
         
     }
     private void OnTriggerEnter2D(Collider2D collision)

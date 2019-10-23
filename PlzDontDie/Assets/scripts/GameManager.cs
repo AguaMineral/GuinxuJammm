@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
+    public int enemyCount = 0;
     public GameObject GameOverMenu;
     public Text livesText;
     public Text scoreText;
+    public Text enemyCountText;
     public float bulletDamage = 2f;
     public float moveSpeed = 5f;
     //public float nextShot =100f;
@@ -34,7 +36,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         UpdateLives();
-
+        UpdateEnemyCount();
     }
 
     public void UpdateLives()
@@ -52,6 +54,14 @@ public class GameManager : MonoBehaviour
         score += 100 * scoreMult;
         scoreText.text = score.ToString();
     }
+    public void UpdateEnemyCount()
+    {
+        if (enemyCount == 0)
+            enemyCountText.text = "Al final si que eras pequeño,\nni un solo enemigo :(";
+        else
+            enemyCountText.text = "Para ser tan pequeño... \nte has cargado a " + enemyCount.ToString() + "  Enemigos";
 
+
+    }
 }
 

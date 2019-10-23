@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 751430060596928175}
   - component: {fileID: 770269129870468562}
   - component: {fileID: 3280504868162652594}
-  - component: {fileID: -5773895334323272383}
+  - component: {fileID: 4295228354914602114}
   m_Layer: 0
   m_Name: enemy01
   m_TagString: enem01
@@ -147,10 +147,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554be0b6104e1fc46a15d835f6348e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 12.544
+  life: 15.735194
   speed: 2.5
   minDistance: 0.4
---- !u!114 &-5773895334323272383
+--- !u!114 &4295228354914602114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,12 +176,12 @@ PrefabInstance:
     - target: {fileID: 915421544473283324, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.0011
       objectReference: {fileID: 0}
     - target: {fileID: 915421544473283324, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.0622
       objectReference: {fileID: 0}
     - target: {fileID: 915421544473283324, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
@@ -236,7 +236,7 @@ PrefabInstance:
     - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
       propertyPath: m_Intensity
-      value: 1.25
+      value: 1.26
       objectReference: {fileID: 0}
     - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
@@ -256,12 +256,17 @@ PrefabInstance:
     - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
       propertyPath: m_PointLightInnerRadius
-      value: 0.37
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
       propertyPath: m_PointLightOuterRadius
-      value: 0.52
+      value: 0.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
+        type: 3}
+      propertyPath: m_LightVolumeOpacity
+      value: 0.16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feaa452783e6395429527a85e1e67ac0, type: 3}
