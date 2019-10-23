@@ -81,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Sprite: {fileID: 21300000, guid: 867ca4320ddbe414caf1f68e3e3e032a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658b3b3073ef5894694e5784bfeb249a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 160
+  life: 2700
   bulletPrefab: {fileID: 1215021500474725662, guid: c74270e349530384d9b89b109ddcf55e,
     type: 3}
   rb1: {fileID: 8498030465231171665, guid: c74270e349530384d9b89b109ddcf55e, type: 3}
@@ -520,11 +520,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6583285080653838316}
     m_Modifications:
-    - target: {fileID: 2070301872253670823, guid: feaa452783e6395429527a85e1e67ac0,
-        type: 3}
-      propertyPath: m_Name
-      value: PointLighBullet
-      objectReference: {fileID: 0}
     - target: {fileID: 915421544473283324, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -579,6 +574,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070301872253670823, guid: feaa452783e6395429527a85e1e67ac0,
+        type: 3}
+      propertyPath: m_Name
+      value: PointLighBullet
       objectReference: {fileID: 0}
     - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}

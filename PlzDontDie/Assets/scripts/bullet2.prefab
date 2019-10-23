@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: ba4a58d9bf4eee64f8248ffe3822abfe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -138,7 +138,6 @@ MonoBehaviour:
   particles: {fileID: 8089729657310205631, guid: 4faeb8391df48dc419be0eb8bbd1b364,
     type: 3}
   duration: 1
-  bulletDamage: 2
 --- !u!1001 &572915910281327022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -209,17 +208,27 @@ PrefabInstance:
     - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.8754735
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
       propertyPath: m_Color.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
+        type: 3}
+      propertyPath: m_LightVolumeOpacity
+      value: 0.07
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feaa452783e6395429527a85e1e67ac0, type: 3}

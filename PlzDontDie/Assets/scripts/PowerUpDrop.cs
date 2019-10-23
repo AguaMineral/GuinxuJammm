@@ -20,7 +20,7 @@ public class PowerUpDrop : MonoBehaviour
            
             Instantiate(dmgPWUP, position, Quaternion.identity);
         }*/
-        if (prob < 20 )
+        if (prob < 22 )
         {
             //Instancia de dmg power up
             Vector3 posicion = new Vector3(transform.position.x, transform.position.y, transform.position.z);
@@ -32,7 +32,7 @@ public class PowerUpDrop : MonoBehaviour
             Vector3 posicion = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             Instantiate(shotPWUP, posicion, Quaternion.identity);
         }*/
-        else if ( prob < 40 && prob > 20)
+        else if ( prob < 48 && prob > 22)
         {
             //instancia de vel mov power up
             Vector3 posicion = new Vector3(transform.position.x, transform.position.y, transform.position.z);
