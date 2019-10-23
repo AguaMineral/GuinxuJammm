@@ -6,7 +6,7 @@ public class EnemyRangedController : MonoBehaviour
 {
 
     public float life;
-    public bulletController bulletCont;
+    //public bulletController bulletCont;
 
 
     //IA
@@ -50,6 +50,7 @@ public class EnemyRangedController : MonoBehaviour
             Rigidbody2D rbBullet = bullet.GetComponent<Rigidbody2D>();
             rbBullet.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
             timeBtwShots = startTimeBtwShots;
+            
         }
         else
         {
@@ -67,11 +68,14 @@ public class EnemyRangedController : MonoBehaviour
     {
         if (collision.gameObject.tag == "playerBullet")
         {
-            life -= bulletCont.bulletDamage;
-            print(life);
-            print("Enemy: hit!");
-            if (CheckIsDeath())
+            life -= bulletController.bulletDamage;
+            //print(life);
+           // print("Enemy: hit!");
+            if (CheckIsDeath()) { 
                 Destroy(gameObject);
+                GetComponent<PowerUpDrop>().dropPowerUp();
+                FindObjectOfType<GameManager>().UpdateScore();
+            }
         }
     }
 

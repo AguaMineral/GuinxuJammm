@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public static float moveSpeed;
 
     public Rigidbody2D rb;
 
@@ -13,10 +13,11 @@ public class playerMovement : MonoBehaviour
 
     public Camera cam;
 
-    
 
     void Update()
     {
+        moveSpeed = FindObjectOfType<GameManager>().moveSpeed;
+
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
@@ -27,6 +28,7 @@ public class playerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        moveSpeed = FindObjectOfType<GameManager>().moveSpeed;
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
         //aim

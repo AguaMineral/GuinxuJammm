@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 639651486717829836}
   - component: {fileID: 4448962986359710808}
   - component: {fileID: 4594384129452922544}
-  - component: {fileID: -5368763908643865579}
+  - component: {fileID: 8718124928357176328}
+  - component: {fileID: 8936201400643294220}
   m_Layer: 0
   m_Name: PWUPdamage
   m_TagString: Untagged
@@ -100,7 +101,28 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.053888083
---- !u!114 &-5368763908643865579
+--- !u!50 &8718124928357176328
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3326406649938886475}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &8936201400643294220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,6 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2869e2095baa464585ca16436197bed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageMult: 1.1
 --- !u!1001 &1104789709310434334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119,11 +142,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639651486717829836}
     m_Modifications:
-    - target: {fileID: 5634904693728980667, guid: 68f10f3fed0db5349aa9b46e41dbd604,
-        type: 3}
-      propertyPath: m_Name
-      value: prefabPWUPLight
-      objectReference: {fileID: 0}
     - target: {fileID: 5634904693728980669, guid: 68f10f3fed0db5349aa9b46e41dbd604,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -178,6 +196,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5634904693728980667, guid: 68f10f3fed0db5349aa9b46e41dbd604,
+        type: 3}
+      propertyPath: m_Name
+      value: prefabPWUPLight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68f10f3fed0db5349aa9b46e41dbd604, type: 3}

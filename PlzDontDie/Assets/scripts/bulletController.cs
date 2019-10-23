@@ -8,18 +8,26 @@ public class bulletController : MonoBehaviour
     Shaker camShake;
     public GameObject particles;
     public float duration = 1f;
-    public float bulletDamage = 2f;
+    public static float bulletDamage;
 
     void Start()
-    {  
+    {
+        bulletDamage = FindObjectOfType<GameManager>().bulletDamage;
+        
         camShake = GameObject.Find("Camera").GetComponent<Shaker>();
         if (camShake == null)
             Debug.LogError("No hay camara");
+    }
+    private void Update()
+    {
+        bulletDamage = FindObjectOfType<GameManager>().bulletDamage;
+        print(bulletDamage);
     }
     void OnCollisionEnter2D(Collision2D collision)
     {;
         GameObject firework = Instantiate(particles, transform.position, Quaternion.identity);
         firework.GetComponent<ParticleSystem>().Play();
+        Destroy(firework, 1f);
         Destroy(gameObject);
         //Shake camera
         camShake.Shake(camShakeAmt, 0.2f);
@@ -31,8 +39,17 @@ public class bulletController : MonoBehaviour
         {
             GameObject firework = Instantiate(particles, transform.position, Quaternion.identity);
             firework.GetComponent<ParticleSystem>().Play();
+            Destroy(firework, 1f);
             Destroy(gameObject);
+           
             camShake.Shake(0.18f, 0.2f);
+        }else if (collision.gameObject.tag == "wall")
+        {
+            GameObject firework = Instantiate(particles, transform.position, Quaternion.identity);
+            firework.GetComponent<ParticleSystem>().Play();
+            Destroy(firework, 1f);
+            Destroy(gameObject);
+
         }
     }
 }

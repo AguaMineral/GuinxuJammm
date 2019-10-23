@@ -5,12 +5,11 @@ using UnityEngine.SceneManagement;
 public class PlayerManager : MonoBehaviour
 {
 
-    private int lifes;
+    public int lifes;
     
     void Start()
     {
         lifes = 5;
-        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -18,8 +17,8 @@ public class PlayerManager : MonoBehaviour
         if ( collision.gameObject.tag == "enem01" || collision.gameObject.tag == "enem02")
         {
             lifes--;
-            print("Player lifes: ");
-            print(lifes);
+            //print("Player lifes: ");
+           // print(lifes);
 
             //Game over check
             if ( lifes <= 0)
@@ -37,8 +36,8 @@ public class PlayerManager : MonoBehaviour
         if (collision.gameObject.tag == "enemBullet")
         {
             lifes--;
-            print("Player lifes: ");
-            print(lifes);
+           // print("Player lifes: ");
+           // print(lifes);
 
             //Game over check
             if (lifes <= 0)

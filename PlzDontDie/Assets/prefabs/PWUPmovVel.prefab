@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1697684452757995069}
   - component: {fileID: 6195411058660009695}
   - component: {fileID: -54782434579423254}
+  - component: {fileID: -5334676044530124149}
   m_Layer: 0
   m_Name: PWUPmovVel
   m_TagString: Untagged
@@ -112,6 +113,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ad4a731a3e9b6443aace5b51951b310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocityMult: 1.07
+  velocity: {fileID: 0}
+--- !u!50 &-5334676044530124149
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2505675080257678148}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &3007238907667418564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119,11 +143,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6321685105560940086}
     m_Modifications:
-    - target: {fileID: 5634904693728980667, guid: 68f10f3fed0db5349aa9b46e41dbd604,
-        type: 3}
-      propertyPath: m_Name
-      value: prefabPWUPLight
-      objectReference: {fileID: 0}
     - target: {fileID: 5634904693728980669, guid: 68f10f3fed0db5349aa9b46e41dbd604,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -178,6 +197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5634904693728980667, guid: 68f10f3fed0db5349aa9b46e41dbd604,
+        type: 3}
+      propertyPath: m_Name
+      value: prefabPWUPLight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68f10f3fed0db5349aa9b46e41dbd604, type: 3}

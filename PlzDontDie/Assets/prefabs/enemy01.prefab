@@ -94,11 +94,11 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5082919028850961212}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 19
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -106,7 +106,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &770269129870468562
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -158,9 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554be0b6104e1fc46a15d835f6348e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 19.738228
-  bulletCont: {fileID: 6483410532391121434, guid: 44d40ca6d76dd02449a8ba2dc0a7686f,
-    type: 3}
+  life: 12.544
   speed: 2.5
   minDistance: 0.4
 --- !u!114 &-5773895334323272383

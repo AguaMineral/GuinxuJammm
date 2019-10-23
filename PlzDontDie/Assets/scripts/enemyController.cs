@@ -6,7 +6,6 @@ public class enemyController : MonoBehaviour
 {
     
     public float life;
-    public bulletController bulletCont;
     
 
     //IA
@@ -29,11 +28,15 @@ public class enemyController : MonoBehaviour
     {
         if ( collision.gameObject.tag == "playerBullet")
         {
-            life -= bulletCont.bulletDamage;
-            print(life);
-            print("Enemy: hit!");
+            life -= bulletController.bulletDamage;
+            //print(life);
+            //print("Enemy: hit!");
             if (CheckIsDeath())
+            {
                 Destroy(gameObject);
+                GetComponent<PowerUpDrop>().dropPowerUp();
+                FindObjectOfType<GameManager>().UpdateScore();
+            }
         }
     }
 

@@ -9,6 +9,7 @@ TagManager:
   - playerBullet
   - enem02
   - enemBullet
+  - wall
   layers:
   - Default
   - TransparentFX

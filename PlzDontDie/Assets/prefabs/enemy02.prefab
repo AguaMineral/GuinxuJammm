@@ -38,9 +38,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6f599a3abf49524e88d178d6a904d03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 10
-  bulletCont: {fileID: 6483410532391121434, guid: 44d40ca6d76dd02449a8ba2dc0a7686f,
-    type: 3}
+  life: 7.84
   speed: 1.6
   stoppingDistance: 3
   nearDistance: 2
@@ -217,6 +215,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Constraints
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 751430060596928175, guid: 3c5e4d73e05ca5c419582207154014c8,
+        type: 3}
+      propertyPath: m_Mass
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 777698821339825561, guid: 3c5e4d73e05ca5c419582207154014c8,
         type: 3}
