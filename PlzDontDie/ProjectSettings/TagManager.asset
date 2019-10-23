@@ -10,6 +10,7 @@ TagManager:
   - enem02
   - enemBullet
   - wall
+  - enem03
   layers:
   - Default
   - TransparentFX

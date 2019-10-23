@@ -14,6 +14,7 @@ public class PWUPatckSpeed : MonoBehaviour
             FindObjectOfType<GameManager>().fireRate *= shotRateMult;
            // FindObjectOfType<GameManager>().nextShot -= nextShotMinus;
             Destroy(gameObject);
+            AudioManager.instance.PlaySound("PowerUp");
         }
     }
 }

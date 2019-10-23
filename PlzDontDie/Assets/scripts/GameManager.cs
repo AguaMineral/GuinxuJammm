@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
+    
     public int enemyCount = 0;
     public GameObject GameOverMenu;
     public Text livesText;
@@ -18,10 +19,21 @@ public class GameManager : MonoBehaviour
     public int score = 0;
     public int scoreMult = 1;
 
+    //Sound
+    private AudioManager audioManager;
+    
+    
+
     void Start()
     {
         livesText.text = GameObject.Find("player").GetComponent<PlayerManager>().lifes.ToString();
         scoreText.text = score.ToString();
+
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.LogError("No AudioManager found in the scene");
+        }
     }
     public void EndGame()
     {
@@ -31,6 +43,7 @@ public class GameManager : MonoBehaviour
     public void PlayAgain()
     {
         SceneManager.LoadScene("Game");
+        AudioManager.instance.PlaySound("Select");
     }
 
     void Update()

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6081925680002257728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.0402746, y: 0.7270485, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 5763644659900579084}
   m_Father: {fileID: 0}
@@ -138,7 +138,6 @@ MonoBehaviour:
   particles: {fileID: 1790709366843131628, guid: ae3a8c939a5bf724a989f2c936b0801e,
     type: 3}
   duration: 1
-  bulletDamage: 1
 --- !u!1001 &4848317742482372592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -146,6 +145,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2202577886857607118}
     m_Modifications:
+    - target: {fileID: 2070301872253670823, guid: feaa452783e6395429527a85e1e67ac0,
+        type: 3}
+      propertyPath: m_Name
+      value: PointLighBullet
+      objectReference: {fileID: 0}
     - target: {fileID: 915421544473283324, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -200,11 +204,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070301872253670823, guid: feaa452783e6395429527a85e1e67ac0,
-        type: 3}
-      propertyPath: m_Name
-      value: PointLighBullet
       objectReference: {fileID: 0}
     - target: {fileID: 3416931065719350356, guid: feaa452783e6395429527a85e1e67ac0,
         type: 3}

@@ -7,7 +7,6 @@ public class enemyController : MonoBehaviour
     
     public float life;
     
-
     //IA
     public float speed;
     Transform target;
@@ -37,6 +36,7 @@ public class enemyController : MonoBehaviour
                 Destroy(gameObject);
                 FindObjectOfType<GameManager>().UpdateScore();
                 FindObjectOfType<GameManager>().enemyCount++;
+                AudioManager.instance.PlaySound("EnemyDeath");
             }
         }
     }

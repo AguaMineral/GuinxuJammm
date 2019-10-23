@@ -13,6 +13,7 @@ public class PWUVelMov : MonoBehaviour
         {
             FindObjectOfType<GameManager>().moveSpeed *= velocityMult;
             Destroy(gameObject);
+            AudioManager.instance.PlaySound("PowerUp");
         }
     }
 }

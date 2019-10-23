@@ -12,6 +12,7 @@ public class PWUdamage : MonoBehaviour
         {
             FindObjectOfType<GameManager>().bulletDamage *= damageMult;
             Destroy(gameObject);
+            AudioManager.instance.PlaySound("PowerUp");
         }
     }
 }

@@ -26,6 +26,7 @@ public class PauseMenuMng : MonoBehaviour
 
     public void Resume()
     {
+        AudioManager.instance.PlaySound("Select");
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
@@ -33,6 +34,7 @@ public class PauseMenuMng : MonoBehaviour
 
     void Pause()
     {
+       
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         gameIsPaused = true;
@@ -40,6 +42,7 @@ public class PauseMenuMng : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        AudioManager.instance.PlaySound("Select");
         //Time.timeScale = 1f; si quiero que en el main menu el juego siga corriendo
         SceneManager.LoadScene("Menu");
     }
@@ -47,6 +50,7 @@ public class PauseMenuMng : MonoBehaviour
   
     public void QuitGame()
     {
+        AudioManager.instance.PlaySound("Select");
         Debug.Log("QUIT");
         Application.Quit();
     }

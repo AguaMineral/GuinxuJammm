@@ -34,6 +34,7 @@ public class shooting : MonoBehaviour
 
     void Shoot()
     {
+        AudioManager.instance.PlaySound("PlayerAttack");
         fireRate = FindObjectOfType<GameManager>().fireRate;
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         //print ("Daño: "+bulletController.bulletDamage);

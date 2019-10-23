@@ -12,6 +12,7 @@ public class SpawnController : MonoBehaviour
     int enemiesInRoom;
     float enemy01CurrentLife;
     float enemy02CurrentLife;
+    float enemy03CurrentLife;
     float enemyLifeMultiplier = 1.12f;
     
 
@@ -19,6 +20,7 @@ public class SpawnController : MonoBehaviour
     {
         enemy01CurrentLife = 7f;
         enemy02CurrentLife = 10f;
+        enemy03CurrentLife = 150;
         InvokeRepeating("SpawnEnemy", spawnTime, spawnDelay);
     }
 
@@ -44,7 +46,7 @@ public class SpawnController : MonoBehaviour
     }*/
     public void SpawnEnemy()
     {
-        Vector3 position = new Vector3(Random.Range(-4f, 4f), Random.Range(-4f, 4f), 0);
+        Vector3 position = new Vector3(Random.Range(-8f, 27f), Random.Range(-5f, -14f), 0);
         Instantiate(Enemy, position, Quaternion.identity);
         if ( Enemy.gameObject.tag == "enem02")
         {
@@ -61,7 +63,14 @@ public class SpawnController : MonoBehaviour
             //print(enemy02CurrentLife);
             enemy02CurrentLife *= enemyLifeMultiplier;
         }
-        
+        else if (Enemy.gameObject.tag == "enem03")
+        {
+            Enemy.GetComponent<enem03controller>().life = enemy03CurrentLife;
+            //print("Melee enemy life: ");
+            //print(enemy02CurrentLife);
+            enemy03CurrentLife *= enemyLifeMultiplier;
+        }
+
         if (StopSpawning)
         {
             CancelInvoke("SpawnEnemy");

@@ -13,14 +13,14 @@ public class PowerUpDrop : MonoBehaviour
         int prob = Random.Range(100, 1);
 
 
-        //TEST code
+       /* //TEST code
         if (prob < 100 && prob > 0)
         {
             //Instancia de dmg power up
            
             Instantiate(dmgPWUP, position, Quaternion.identity);
-        }
-        /*if (prob < 15 )
+        }*/
+        if (prob < 20 )
         {
             //Instancia de dmg power up
             Vector3 posicion = new Vector3(transform.position.x, transform.position.y, transform.position.z);
@@ -32,11 +32,11 @@ public class PowerUpDrop : MonoBehaviour
             Vector3 posicion = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             Instantiate(shotPWUP, posicion, Quaternion.identity);
         }*/
-        /*else if ( prob < 30 && prob > 15)
+        else if ( prob < 40 && prob > 20)
         {
             //instancia de vel mov power up
             Vector3 posicion = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             Instantiate(velPWUP, posicion, Quaternion.identity);
-        }*/
+        }
     }
 }

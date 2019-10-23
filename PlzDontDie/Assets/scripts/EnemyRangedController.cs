@@ -49,6 +49,7 @@ public class EnemyRangedController : MonoBehaviour
             GameObject bullet = Instantiate(bulletPrefab, posicion, Quaternion.identity);
             Rigidbody2D rbBullet = bullet.GetComponent<Rigidbody2D>();
             rbBullet.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+            AudioManager.instance.PlaySound("EnemyShot");
             timeBtwShots = startTimeBtwShots;
             
         }
@@ -76,6 +77,7 @@ public class EnemyRangedController : MonoBehaviour
                 Destroy(gameObject);
                 FindObjectOfType<GameManager>().UpdateScore();
                 FindObjectOfType<GameManager>().enemyCount++;
+                AudioManager.instance.PlaySound("EnemyDeath");
             }
         }
     }

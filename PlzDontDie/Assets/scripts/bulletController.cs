@@ -25,7 +25,7 @@ public class bulletController : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if ( collision.gameObject.tag == "enem01" || collision.gameObject.tag == "enem02")
+        if ( collision.gameObject.tag == "enem01" || collision.gameObject.tag == "enem02" || collision.gameObject.tag == "enem03")
         {
             GameObject firework = Instantiate(particles, transform.position, Quaternion.identity);
             firework.GetComponent<ParticleSystem>().Play();
@@ -33,6 +33,7 @@ public class bulletController : MonoBehaviour
             Destroy(gameObject);
             //Shake camera
             camShake.Shake(camShakeAmt, 0.2f);
+            AudioManager.instance.PlaySound("PlayerHit");
         }
         else
         {
@@ -52,7 +53,7 @@ public class bulletController : MonoBehaviour
             firework.GetComponent<ParticleSystem>().Play();
             Destroy(firework, 1f);
             Destroy(gameObject);
-           
+            AudioManager.instance.PlaySound("EnemyHitPlayer");
             camShake.Shake(0.18f, 0.2f);
         }else if (collision.gameObject.tag == "wall")
         {
